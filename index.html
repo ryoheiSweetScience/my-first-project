@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>瑞幸咖啡（Luckin Coffee）企業分析ダッシュボード</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <div class="logo-area">
+        <span class="logo-icon">&#9749;</span>
+        <div>
+          <h1>瑞幸咖啡 <span class="en">Luckin Coffee</span></h1>
+          <p class="subtitle">企業分析ダッシュボード</p>
+        </div>
+      </div>
+      <div class="stock-badge">
+        <span class="ticker">OTC: LKNCY</span>
+        <span class="update">データ更新: 2024年度</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 会社概要 -->
+    <section class="card company-overview">
+      <h2>会社概要</h2>
+      <div class="overview-grid">
+        <div class="overview-item">
+          <span class="label">正式名称</span>
+          <span class="value">瑞幸咖啡（Luckin Coffee Inc.）</span>
+        </div>
+        <div class="overview-item">
+          <span class="label">設立年</span>
+          <span class="value">2017年10月</span>
+        </div>
+        <div class="overview-item">
+          <span class="label">本社所在地</span>
+          <span class="value">中国・福建省アモイ市</span>
+        </div>
+        <div class="overview-item">
+          <span class="label">創業者</span>
+          <span class="value">銭治亜（Jenny Qian Zhiya）</span>
+        </div>
+        <div class="overview-item">
+          <span class="label">CEO</span>
+          <span class="value">郭謹一（Jinyi Guo）</span>
+        </div>
+        <div class="overview-item">
+          <span class="label">上場市場</span>
+          <span class="value">OTC Markets（旧NASDAQ、2020年上場廃止後OTCへ移行）</span>
+        </div>
+        <div class="overview-item full-width">
+          <span class="label">事業内容</span>
+          <span class="value">コーヒー及び飲料のチェーン店運営。テクノロジー駆動型のリテールモデルを採用し、モバイルアプリによる注文・決済を中心としたビジネスモデルを展開。自社店舗に加え、フランチャイズ（パートナーシップ）店舗を急拡大中。</span>
+        </div>
+      </div>
+      <div class="timeline">
+        <h3>沿革ハイライト</h3>
+        <div class="timeline-items">
+          <div class="timeline-item">
+            <span class="year">2017</span>
+            <span class="event">北京で1号店オープン</span>
+          </div>
+          <div class="timeline-item">
+            <span class="year">2019</span>
+            <span class="event">NASDAQ上場（設立から18ヶ月で史上最速クラスのIPO）</span>
+          </div>
+          <div class="timeline-item negative">
+            <span class="year">2020</span>
+            <span class="event">売上22億元の不正会計発覚、NASDAQ上場廃止</span>
+          </div>
+          <div class="timeline-item">
+            <span class="year">2021</span>
+            <span class="event">経営陣刷新、再建開始</span>
+          </div>
+          <div class="timeline-item positive">
+            <span class="year">2023</span>
+            <span class="event">店舗数でスターバックス中国を初めて上回る</span>
+          </div>
+          <div class="timeline-item positive">
+            <span class="year">2024</span>
+            <span class="event">店舗数20,000店突破、海外展開開始</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 財務データ -->
+    <section class="card financial-data">
+      <h2>財務データ推移</h2>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>項目</th>
+              <th>2019年</th>
+              <th>2020年</th>
+              <th>2021年</th>
+              <th>2022年</th>
+              <th>2023年</th>
+              <th>2024年</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="row-label">売上高（億元）</td>
+              <td>30.3</td>
+              <td>40.3</td>
+              <td>79.7</td>
+              <td>132.9</td>
+              <td>249.0</td>
+              <td>344.8</td>
+            </tr>
+            <tr>
+              <td class="row-label">前年比成長率</td>
+              <td>-</td>
+              <td class="positive-text">+33.0%</td>
+              <td class="positive-text">+97.5%</td>
+              <td class="positive-text">+66.9%</td>
+              <td class="positive-text">+87.3%</td>
+              <td class="positive-text">+38.4%</td>
+            </tr>
+            <tr>
+              <td class="row-label">営業利益（億元）</td>
+              <td class="negative-text">-24.1</td>
+              <td class="negative-text">-25.9</td>
+              <td class="negative-text">-5.4</td>
+              <td class="positive-text">11.6</td>
+              <td class="positive-text">30.3</td>
+              <td class="positive-text">34.3</td>
+            </tr>
+            <tr>
+              <td class="row-label">営業利益率</td>
+              <td class="negative-text">-79.5%</td>
+              <td class="negative-text">-64.3%</td>
+              <td class="negative-text">-6.8%</td>
+              <td class="positive-text">8.7%</td>
+              <td class="positive-text">12.2%</td>
+              <td class="positive-text">9.9%</td>
+            </tr>
+            <tr>
+              <td class="row-label">総店舗数</td>
+              <td>4,507</td>
+              <td>3,929</td>
+              <td>6,024</td>
+              <td>8,214</td>
+              <td>16,218</td>
+              <td>21,272</td>
+            </tr>
+            <tr>
+              <td class="row-label">　うち直営店</td>
+              <td>4,507</td>
+              <td>3,929</td>
+              <td>5,671</td>
+              <td>5,652</td>
+              <td>10,628</td>
+              <td>13,103</td>
+            </tr>
+            <tr>
+              <td class="row-label">　うちパートナー店</td>
+              <td>-</td>
+              <td>-</td>
+              <td>353</td>
+              <td>2,562</td>
+              <td>5,590</td>
+              <td>8,169</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="note">※ 財務数値は公開情報に基づく概算値です。1元 ≈ 約21円（2024年平均レート参考）</p>
+    </section>
+
+    <!-- グラフエリア -->
+    <section class="card charts">
+      <h2>売上・利益推移グラフ</h2>
+      <div class="chart-container">
+        <div class="chart-area">
+          <canvas id="revenueChart"></canvas>
+        </div>
+        <div class="chart-area">
+          <canvas id="storeChart"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <!-- SWOT分析 -->
+    <section class="card swot-analysis">
+      <h2>SWOT分析</h2>
+      <div class="swot-grid">
+        <div class="swot-item strengths">
+          <h3>強み（Strengths）</h3>
+          <ul>
+            <li>中国最大のコーヒーチェーン（店舗数21,000超）</li>
+            <li>テクノロジー駆動型モデル（アプリ注文中心で高効率オペレーション）</li>
+            <li>低価格戦略で価格競争力が高い（1杯9〜15元中心）</li>
+            <li>小型店舗（テイクアウト特化）で出店コストが低い</li>
+            <li>新商品開発のスピードが速い（年間100種以上の新メニュー）</li>
+            <li>不正会計スキャンダルからのV字回復で経営体制が強化</li>
+          </ul>
+        </div>
+        <div class="swot-item weaknesses">
+          <h3>弱み（Weaknesses）</h3>
+          <ul>
+            <li>2020年の不正会計問題によるブランドイメージの毀損（特に海外市場）</li>
+            <li>OTC市場への上場で資金調達面に制約</li>
+            <li>利益率が低下傾向（値引き競争の激化）</li>
+            <li>中国市場への過度な依存（売上のほぼ100%が中国国内）</li>
+            <li>カフェ体験よりも「ファストコーヒー」寄りでブランド力に限界</li>
+            <li>フランチャイズ店舗の品質管理リスク</li>
+          </ul>
+        </div>
+        <div class="swot-item opportunities">
+          <h3>機会（Opportunities）</h3>
+          <ul>
+            <li>中国のコーヒー市場は年間20%以上成長（1人あたり消費量はまだ少ない）</li>
+            <li>低級都市（3〜5級都市）への浸透余地が大きい</li>
+            <li>海外展開（シンガポール等の東南アジアへ進出開始）</li>
+            <li>ティードリンク・軽食などメニュー多角化の余地</li>
+            <li>AIやデータ分析を活用したさらなるオペレーション最適化</li>
+            <li>コーヒー文化の浸透に伴う市場全体の拡大</li>
+          </ul>
+        </div>
+        <div class="swot-item threats">
+          <h3>脅威（Threats）</h3>
+          <ul>
+            <li>スターバックスの中国市場での積極投資と反撃</li>
+            <li>庫迪咖啡（Cotti Coffee）等の新興低価格チェーンの台頭</li>
+            <li>価格競争の激化による利益率の圧迫</li>
+            <li>中国経済の減速が消費支出に与える影響</li>
+            <li>コーヒー豆の国際価格変動リスク</li>
+            <li>規制リスク（食品安全、データプライバシー等）</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 競合比較 -->
+    <section class="card competitor-comparison">
+      <h2>競合比較（中国コーヒー市場）</h2>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>項目</th>
+              <th class="highlight-col">瑞幸咖啡<br><small>Luckin Coffee</small></th>
+              <th>スターバックス中国<br><small>Starbucks China</small></th>
+              <th>庫迪咖啡<br><small>Cotti Coffee</small></th>
+              <th>Manner Coffee</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="row-label">設立年</td>
+              <td class="highlight-col">2017年</td>
+              <td>1999年（中国進出）</td>
+              <td>2022年</td>
+              <td>2015年</td>
+            </tr>
+            <tr>
+              <td class="row-label">中国店舗数（2024年）</td>
+              <td class="highlight-col">約21,000</td>
+              <td>約7,300</td>
+              <td>約6,500</td>
+              <td>約1,200</td>
+            </tr>
+            <tr>
+              <td class="row-label">平均価格帯</td>
+              <td class="highlight-col">9〜15元</td>
+              <td>30〜40元</td>
+              <td>8〜10元</td>
+              <td>15〜25元</td>
+            </tr>
+            <tr>
+              <td class="row-label">ターゲット層</td>
+              <td class="highlight-col">コスパ重視の都市部消費者</td>
+              <td>プレミアム志向の中間層</td>
+              <td>超低価格志向層</td>
+              <td>品質重視の若年層</td>
+            </tr>
+            <tr>
+              <td class="row-label">店舗形態</td>
+              <td class="highlight-col">テイクアウト中心の小型店</td>
+              <td>フルサービスの中〜大型店</td>
+              <td>テイクアウト小型店</td>
+              <td>小型スタンド型</td>
+            </tr>
+            <tr>
+              <td class="row-label">注文方式</td>
+              <td class="highlight-col">アプリ注文中心</td>
+              <td>店頭＋アプリ併用</td>
+              <td>アプリ注文中心</td>
+              <td>店頭注文中心</td>
+            </tr>
+            <tr>
+              <td class="row-label">主な強み</td>
+              <td class="highlight-col">圧倒的な店舗数と出店スピード</td>
+              <td>ブランド力と「サードプレイス」体験</td>
+              <td>超低価格による急速拡大</td>
+              <td>コーヒー品質へのこだわり</td>
+            </tr>
+            <tr>
+              <td class="row-label">海外展開</td>
+              <td class="highlight-col">シンガポール等で開始</td>
+              <td>グローバル展開済み</td>
+              <td>韓国・東南アジア等</td>
+              <td>なし</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 市場シェアグラフ -->
+    <section class="card market-share">
+      <h2>中国コーヒーチェーン 店舗数比較</h2>
+      <div class="bar-chart" id="marketShareChart"></div>
+    </section>
+
+    <!-- まとめ -->
+    <section class="card summary">
+      <h2>総合評価</h2>
+      <div class="summary-content">
+        <div class="score-area">
+          <div class="score-item">
+            <span class="score-label">成長性</span>
+            <div class="score-bar"><div class="score-fill" style="width: 90%"></div></div>
+            <span class="score-value">4.5 / 5</span>
+          </div>
+          <div class="score-item">
+            <span class="score-label">収益性</span>
+            <div class="score-bar"><div class="score-fill" style="width: 60%"></div></div>
+            <span class="score-value">3.0 / 5</span>
+          </div>
+          <div class="score-item">
+            <span class="score-label">競争優位性</span>
+            <div class="score-bar"><div class="score-fill" style="width: 80%"></div></div>
+            <span class="score-value">4.0 / 5</span>
+          </div>
+          <div class="score-item">
+            <span class="score-label">ブランド力</span>
+            <div class="score-bar"><div class="score-fill" style="width: 56%"></div></div>
+            <span class="score-value">2.8 / 5</span>
+          </div>
+          <div class="score-item">
+            <span class="score-label">リスク管理</span>
+            <div class="score-bar"><div class="score-fill" style="width: 64%"></div></div>
+            <span class="score-value">3.2 / 5</span>
+          </div>
+        </div>
+        <div class="summary-text">
+          <p>瑞幸咖啡は、不正会計スキャンダルという危機を乗り越え、中国最大のコーヒーチェーンへと成長した。テクノロジー活用と低価格戦略により驚異的な出店ペースを維持し、2023年にはスターバックス中国を店舗数で上回った。</p>
+          <p>一方で、庫迪咖啡など新興チェーンとの価格競争が激化しており、利益率の維持が今後の課題となる。海外展開はまだ初期段階であり、中国市場への依存度が高い点もリスク要因である。</p>
+          <p>長期的には、中国のコーヒー市場自体の拡大（1人あたり年間消費量は先進国の1/10以下）が追い風となり、低級都市への浸透と海外展開の成否が企業価値を左右する。</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>本ダッシュボードは公開情報に基づく分析資料です。投資助言ではありません。</p>
+    <p>データ出典：Luckin Coffee IR資料、各社公開情報 | 作成日：2025年</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
